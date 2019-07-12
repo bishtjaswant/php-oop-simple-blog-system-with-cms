@@ -54,7 +54,7 @@ $format = new Format(); ?>
 
 
 
-  <form method="post" action="<?=$_SERVER['PHP_SELF'] ?>">
+  <form method="post" action="<?= htmlspecialchars($_SERVER['PHP_SELF']) ?>">
 
 <?php // edit request for categiry
 if (  isset($_GET['edit_id']) && $_GET['action']=="edit") {
