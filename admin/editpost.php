@@ -169,12 +169,21 @@ if ( isset($_GET['edit_id'])  && $_GET['action']=="edit_post"  ) {
                             </td>
                             <td>
                                 <select id="select" name="category">
-                                  <?php $categories= $categoryDB->index(); ?>
+                         <?php $categories= $categoryDB->index(); ?>
                                   <?php foreach ($categories as $category): ?>
+                   
 
-                                  	<?php if ($category['id'] == $result['cat'] ): ?>
-                                  		  <option selected value="<?= $category['id'] ?>" > <?= $category['name'] ?> </option>
-                                  	<?php endif ?>
+                    		  <option 
+
+                            <?php if ( $category['id']== $result['cat'] ): ?>
+                              selected
+                            <?php endif ?>
+                           value="<?= $category['id'] ?>" > 
+  
+                            <?= $category['name'] ?>
+
+                             </option>
+                                  	 
                                     
                                   <?php endforeach ?>
                                 </select>

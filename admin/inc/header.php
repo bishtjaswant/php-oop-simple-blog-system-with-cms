@@ -105,7 +105,7 @@ header("Cache-Control:max-age=2592000");
         <div class="grid_12">
             <ul class="nav main">
                 <li class="ic-dashboard"><a href="index.php"><span>Dashboard</span></a> </li>
-                <li class="ic-form-style"><a href=""><span>User Profile</span></a></li>
+                <li class="ic-form-style"><a href="userprofile.php"><span>User Profile</span></a></li>
                 <li class="ic-typography"><a href="changepassword.php"><span>Change Password</span></a></li>
 
                 <?php 
@@ -113,7 +113,7 @@ header("Cache-Control:max-age=2592000");
                     $result= $contactDB->unseenMessage($query);
                  ?>
                 <li class="ic-grid-tables"><a href="inbox.php"><span>Inbox (<?= $result ?>) </span></a></li>
-                <li class="ic-charts"><a href="postlist.php"><span>Visit Website</span></a></li>
+                <li class="ic-charts"><a href="postlist.php"><span>All Posts</span></a></li>
             </ul>
         </div>
         <div class="clear">

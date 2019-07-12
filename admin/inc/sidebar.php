@@ -17,13 +17,21 @@
                                 <li><a>Contact Us</a></li>
                             </ul>
                         </li>
-                        <li><a class="menuitem">Category Option</a>
+
+                            <li><a class="menuitem">User</a>
+                            <ul class="submenu">
+                                <li><a href="adduser.php">Add User</a> </li>
+                                <li><a href="userlist.php">User List</a> </li>
+                            </ul>
+                        </li>
+
+                        <li><a class="menuitem">Category</a>
                             <ul class="submenu">
                                 <li><a href="addcat.php">Add Category</a> </li>
                                 <li><a href="catlist.php">Category List</a> </li>
                             </ul>
                         </li>
-                        <li><a class="menuitem">Post Option</a>
+                        <li><a class="menuitem">Post</a>
                             <ul class="submenu">
                                 <li><a href="addpost.php">Add Post</a> </li>
                                 <li><a href="postlist.php">Post List</a> </li>

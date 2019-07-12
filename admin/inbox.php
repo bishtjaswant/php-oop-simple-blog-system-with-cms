@@ -49,23 +49,13 @@ $contactDB = new Contact();
                               " href="inbox.php?action=delete&delete_id=<?=$contact['id'] ?>" >Delete</a>
                               ||
 
-                     
-                     <?php 
-                           $query= "SELECT `seen` FROM `contacts`";
-                           $contacts = $contactDB->select($query);
-
-                           // print_r($contacts[0]['seen']);
-           ?>
-                        
-                             <?php foreach ($contacts as $contact): ?>
-                                 <?php if ($contact['seen']==1): ?>
-                                            <a href="readmsg.php?action=read&msg_id=<?=$contact['id'] ?>">
-                                                     <span style="color: green;"> Read messeage</span>      </a>
-                                 <?php else: ?>
-                                               <a href="readmsg.php?action=read&msg_id=<?=$contact['id'] ?>">
-                                                     <span style="color: red;"> Read messeage</span>      </a>
-                                 <?php endif ?>
-                             <?php endforeach ?>
+  <a href="readmsg.php?action=read&msg_id=<?=$contact['id'] ?>">
+        <?php if ($contact['seen']==1): ?>
+               <span style="color:green;"> Read</span> 
+        <?php else: ?>
+                 <span style="color:red;"> Read</span> 
+        <?php endif ?>
+     </a>
                         
                  
 							</td>
